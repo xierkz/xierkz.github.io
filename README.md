@@ -1,7 +1,12 @@
-# xierkz.github.io
-curriculum vitae
-
-# About the significance of this project
-+ This is my networked resume
-+ It will enrich with my experience
-+ If you see it, call me anytime, anywhere …
+# About the warehouse
++ Name：xierkz.github.io
++ Web Link：https://xierkz.icu
++ Purpose：Personal Webpage and Personal CV
+---
+# Purpose
++ Webpage  
+    + show yourself
++ CV  
+    + [click](https://xierkz.icu/cv.html)
++ To be continued
+    + …
