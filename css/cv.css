@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 32px;
+    line-height: 70px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+}
