@@ -3,688 +3,437 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal website</title>
+   <link rel="shortcut icon" href="./images/ui/favicon.ico" type="image/x-icon">
+    <title>节目录</title>
+    <style>
+        body {
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            background-image: url(https://img-baofun.zhhainiao.com/pcwallpaper_ugc/static/309e57f58b48f140df5a4ef38283c88e.jpg?x-oss-process=image%2fresize%2cm_lfit%2cw_1920%2ch_1080);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
 
-    <link href="./css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-    <link href="./css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
-    <link href="./css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
-    <link href="./css/animate.css" rel="stylesheet" type="text/css" />
-    <link href="./css/owl.carousel.css" rel="stylesheet" type="text/css" />
-    <link href="./css/owl.theme.css" rel="stylesheet" type="text/css" />
-    <link href="./css/owl.transitions.css" rel="stylesheet" type="text/css" />
-    <link href="./css/magnific-popup.css" rel="stylesheet" type="text/css" />
-    <link href="./css/jquery.countdown.css" rel="stylesheet" type="text/css" />
-    <link href="./css/style.css" rel="stylesheet" type="text/css" />
-    <link rel="shortcut icon" href="./images/ui/favicon.ico" type="image/x-icon">
-    <link id="colors" href="./css/colors/scheme-04.css" rel="stylesheet" type="text/css" />
-    <link href="./css/coloring.css" rel="stylesheet" type="text/css" />
+        a {
+            text-decoration-line: none;
+        }
 
+        h1 {
+            text-align: center;
+            height: 88px;
+        }
+
+        .bro {
+            margin: 0 auto;
+            padding-left: 25%;
+            /* background-color: floralwhite; */
+        }
+
+        .pic {
+            width: 154px;
+            height: 216px;
+            object-fit: cover;
+            flex: 1;
+        }
+    </style>
 </head>
-<div id="wrapper">
-    <div class="page-overlay">
-        <div class="preloader-wrap">
-            <div class="spinner">
-                <div class="bounce1"></div>
-                <div class="bounce2"></div>
-                <div class="bounce3"></div>
-            </div>
-        </div>
-    </div>
-
-    <header class="transparent scroll-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="d-flex justify-content-between">
-                        <div class="align-self-center header-col-left">
-
-                            <div id="logo">
-                                <a href="./index.html">
-                                    xierKZ
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="align-self-center ml-auto header-col-mid">
-
-                            <ul id="mainmenu" class="scrollnav">
-                                <li><a href="#section-hero" class="active">主页</a></li>
-                                <li></li>
-                                <li><a href="#section-blog">新闻</a></li>
-                                <li></li>
-                                <li><a href="#section-services">特点</a></li>
-                                <li></li>
-                                <li><a href="#section-portfolio">摄影</a></li>
-                                <li></li>
-                                <li><a href="#section-testimonial">榜样</a></li>
-                                <li></li>
-                                <li><a href="#section-about">关于</a></li>
-                                <li></li>
-                                <li><a href="#section-contact">联系</a></li>
-                                <li></li>
-                            </ul>
-
-                        </div>
-
-                        <div class="align-self-center ml-auto header-col-right">
-                            <!-- 注重这儿 -->
-                            <div class="social-icons">
-                                <a href="https://github.com/xierkz"><i class="fa fa-github fa-lg"></i></a>
-                                <a href="mailto:xierkz@gmail.com"><i class="fa fa-google fa-lg"></i></a>
-                                <a href="https://twitter.com/xierkz106"><i class="fa fa-twitter fa-lg"></i></a>
-                            </div>
-
-                            <span id="menu-btn"></span>
-
-                        </div>
-                        <div class="clearfix"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="no-bottom no-top" id="content">
-        <div id="top"></div>
-
-        <section id="section-hero" class="full-height text-light no-padding" data-speed="5" data-type="background">
-            <div class="de-video-container">
-                <div class="de-video-content">
-                    <div class="text-center">
-
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-8 offset-md-2 text-center">
-                                    <h4 class="id-color">Weclome</h4>
-                                    <div class="spacer-10"></div>
-
-                                    <div class="h1_big text-white">
-                                        我 是
-                                        <div class="typed-strings">
-                                            <p>human</p>
-                                            <p>gamer</p>
-                                            <p>programmer</p>
-                                            <p>xierKZ</p>
-                                        </div>
-                                        <div class="typed"></div>
-                                    </div>
-                                </div>
-
-                                <div class="spacer-30"></div>
-
-                                <div class="col-md-6 offset-md-3 text-center">
-                                    <p class="lead wow fadeInUp" data-wow-delay=".75s">一年之际在于春,一日之际在于晨,一寸光阴,一寸金朗读.</p>
-                                    <div class="spacer-20"></div>
-                                    <a class="btn-custom scroll-to wow fadeInUp" data-wow-delay="1s"
-                                        href="#section-about">关于 我</a>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="de-video-overlay"></div>
-                <!-- muted 代表静音 -->
-                <video autoplay="" loop="" muted="" poster="./images/background/video.png">
-                    <source src="./video/first.mp4" type="video/mp4" />
-                </video>
-
-            </div>
-
-            <a href="#section-about" class="scroll-to">
-                <span class="mouse">
-                    <span class="scroll"></span>
-                </span>
-            </a>
-        </section>
-
-        <section id="section-blog">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="text-center">
-                            <h2>新闻</h2>
-                            <p>获取IT界最新新</p>
-                            <div class="spacer-30"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb30">
-                        <div class="bloglist item">
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <img alt="JDK20" src="./images/news/1.jpg" />
-                                    <div class="post-info">
-                                        <div class="inner"><span class="post-date">2023 年 3 月 21 日</span> <span
-                                                class="post-author">Oracle</span></div>
-                                    </div>
-                                </div>
-                                <div class="post-text">
-                                    <h4><a
-                                            href="https://www.oracle.com/news/announcement/oracle-releases-java-20-2023-03-21/">JDK
-                                            20</a></h4>
-                                    <p>Java 20 （Oracle JDK 20） 提供了数以千计的性能、稳定性和安全性改进，包括平台增强功能，可帮助开发人员提高工作效率并推动整个组织的创新和增长。
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb30">
-                        <div class="bloglist item">
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <img alt="" src="./images/news/2.png" />
-                                    <div class="post-info">
-                                        <div class="inner"><span class="post-date">2022 年 2 月 7 日</span> <span
-                                                class="post-author">尤雨溪</span></div>
-                                    </div>
-                                </div>
-                                <div class="post-text">
-                                    <h4><a href="https://vue3js.com/">Vue3</a></h4>
-                                    <p>下一代web开发框架，更快、更轻、集成TS、更优秀API。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb30">
-                        <div class="bloglist item">
-                            <div class="post-content">
-                                <div class="post-image">
-                                    <img alt="" src="./images/news/3.jpg" />
-                                    <div class="post-info">
-                                        <div class="inner"><span class="post-date">2023 年 3 月 15 日</span> <span
-                                                class="post-author">OpenAI</span></div>
-                                    </div>
-                                </div>
-                                <div class="post-text">
-                                    <h4><a href="https://openai.com/chatgpt">ChatGPT</a></h4>
-                                    <p>坦率地说，这太让人不知所措了。我们感到非常惊讶，一直在努力赶上进度。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="section-services" data-bgcolor="#8be4db">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="text-center">
-                            <h2>特点</h2>
-                            <p>当用时万金不惜，不当用时一文不费。</p>
-                            <div class="spacer-30"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 所有i标签需要重定义 -->
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
-                        <div class="f-box f-icon-left f-icon-circle f-border">
-
-                            <i class="fa fa-laptop id-color"></i>
-
-                            <div class="fb-text">
-                                <h4>性格</h4>
-                                <p>大丈夫能屈能伸。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
-                        <div class="f-box f-icon-left f-icon-circle f-border">
-
-                            <i class="fa fa-paper-plane-o id-color"></i>
-
-                            <div class="fb-text">
-                                <h4>行为</h4>
-                                <p>在克服恶习上，迟做总比不做强。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".5s">
-                        <div class="f-box f-icon-left f-icon-circle f-border">
-
-                            <i class="fa fa-line-chart id-color"></i>
-
-                            <div class="fb-text">
-                                <h4>外貌</h4>
-                                <p>外貌容易认，内心最难猜。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay="0s">
-                        <div class="f-box f-icon-left f-icon-circle f-border">
-
-                            <i class="fa fa-object-group id-color"></i>
-
-                            <div class="fb-text">
-                                <h4>背景</h4>
-                                <p>肚子里怀了个地图。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".25s">
-                        <div class="f-box f-icon-left f-icon-circle f-border">
-
-                            <i class="fa fa-hdd-o id-color"></i>
-
-                            <div class="fb-text">
-                                <h4>思想</h4>
-                                <p>不怕人不敬，就怕己不正。</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 mb30 wow fadeInRight" data-wow-delay=".5s">
-                        <div class="f-box f-icon-left f-icon-circle f-border">
-
-                            <i class="fa fa-comments-o id-color"></i>
-
-                            <div class="fb-text">
-                                <h4>内心</h4>
-                                <p>纯洁的良心比任何东西都可贵。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section-cta">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 offset-md-2 text-center">
-                        <h2>你可以 雇佣 我</h2>
-                        <div class="spacer-10"></div>
-                        <a href="./cv.html" class="btn-custom">看看我的CV</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section-portfolio">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h5><span class="id-color">摄影</span></h5>
-                        <h2>Images</h2>
-                    </div>
-
-                    <div class="spacer-single"></div>
-
-                    <div class="col-md-12 text-center">
-                        <ul id="filters">
-                            <li><a href="#" data-filter="*" class="selected">季节</a></li>
-                            <li><a href="#" data-filter=".spring">春天</a></li>
-                            <li><a href="#" data-filter=".summer">夏天</a></li>
-                            <li><a href="#" data-filter=".autumn">秋天</a></li>
-                            <li><a href="#" data-filter=".winter">冬天</a></li>
-                        </ul>
-
-                        <div id="gallery" class="gallery full-gallery de-gallery pf_full_width pf_3_cols grid sequence">
-
-                            <div class="item spring winter gallery-item ">
-                                <div class="picframe wow">
-                                    <span class="overlay">
-                                        <span class="pf_text">
-                                            <span class="project-name">season</span>
-                                        </span>
-                                    </span>
-                                    <img src="./images/portfolio/1.png" alt="season" />
-                                </div>
-                            </div>
-
-                            <div class="item autumn gallery-item ">
-                                <div class="picframe wow">
-                                    <span class="overlay">
-                                        <span class="pf_text">
-                                            <span class="project-name">season</span>
-                                        </span>
-                                    </span>
-                                    <img src="./images/portfolio/2.png" alt="season" />
-                                </div>
-                            </div>
-
-                            <div class="item spring gallery-item ">
-                                <div class="picframe wow">
-                                    <span class="overlay">
-                                        <span class="pf_text">
-                                            <span class="project-name">season</span>
-                                        </span>
-                                    </span>
-                                    <img src="./images/portfolio/3.png" alt="season" />
-                                </div>
-                            </div>
-
-                            <div class="item spring summer autumn gallery-item ">
-                                <div class="picframe wow">
-                                    <span class="overlay">
-                                        <span class="pf_text">
-                                            <span class="project-name">season</span>
-                                        </span>
-                                    </span>
-                                    <img src="./images/portfolio/4.png" alt="season" />
-                                </div>
-                            </div>
-
-                            <div class="item summer autumn winter gallery-item ">
-                                <div class="picframe wow">
-                                    <span class="overlay">
-                                        <span class="pf_text">
-                                            <span class="project-name">season</span>
-                                        </span>
-                                    </span>
-                                    <img src="./images/portfolio/5.png" alt="season" />
-                                </div>
-                            </div>
-
-                            <div class="item summer winter gallery-item ">
-                                <div class="picframe wow">
-                                    <span class="overlay">
-                                        <span class="pf_text">
-                                            <span class="project-name">season</span>
-                                        </span>
-                                    </span>
-                                    <img src="./images/portfolio/6.png" alt="season" />
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section id="section-testimonial" class="custom-1" data-bgcolor="#8be4db">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="text-center">
-                            <h2>榜样</h2>
-                            <p>推荐一些大佬，也是我的学习榜样</p>
-                            <div class="spacer-30"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-8 offset-md-2">
-                        <div id="testimonial-carousel-single" class="owl-carousel owl-theme wow fadeInUp">
-                            <blockquote class="testimonial-big">
-                                <img src="./images/people/codesheep.webp"
-                                    alt="1" />
-                                他是一位毕业于华中科技大学的计算机专业的程序员，运用自己的知识在B站上分享给每一位人，
-                                并实施更新IT时代的步伐，推荐一些比较先进的技术，如：CodeWhisperer + VSCode结合实例等…
-                                还有自己创建的知识网站：https://r2coding.com
-
-                                <span class="name"><a href="https://space.bilibili.com/384068749"
-                                        style="font-weight: 800;">CodeSheep</a></span>
-                            </blockquote>
-
-                            <blockquote class="testimonial-big">
-                                <img src="./images/people/zhj.webp"
-                                    alt="2" />
-                                这位很强大，很多公开项目都具有实际价值，值得去尝试钻研，提高自我准。
-                                我最喜欢的是它客制化的键盘，融入了很多想法，而这些想法还在别人脑袋幻想中，他已经实现了！
-                                这个是链接：https://www.bilibili.com/video/BV19V4y1J7Hx
-
-                                <span class="name"><a href="https://space.bilibili.com/20259914"
-                                        style="font-weight: 800;">稚晖君</a></span>
-                            </blockquote>
-
-                            <blockquote class="testimonial-big">
-                                <img src="./images/people/hrx.png" alt="3" />
-                                为什么要说起这位呢？
-                                那当然是显卡之父，英伟达显卡是生产力工具组件之一，离不开它的高效率的工作，来解决我们所需要的设施。
-                                战略性的撤退、牺牲、决定放弃什么是成功的核心，非常关键的核心。
-
-                                <span class="name" style="color: #dc4970; font-weight: 800;">黄仁勋</span>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section-about">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-lg-6 mb-sm-30 text-center">
-                        <div class="de-images">
-                            <img class="di-small-2 wow fadeInLeft" src="./images/misc/left.png" alt="前小" />
-                            <img class="img-fluid wow fadeInRight" src="./images/misc/right.png" alt="后大" />
-                        </div>
-                    </div>
-
-                    <div class="col-lg-5 offset-md-1 wow fadeInLeft" data-wow-delay=".5s">
-                        <h2>关于 我</h2>
-                        <p>
-                        <p>关于我自己，一位毕业两年(2022/06)的社会人，学习专业为计算机科学与技术。</p>
-                        <p>编程语言：C、Java、Python、PHP、H5、JS、Shell。</p>
-                        <p>框架：Spring、Spring Boot、Spring MVC。</p>
-                        <p>大数据技术：大数据采集(爬虫)、存储(Redis、MongoDB、HBASE)、处理(Pandas)、分析(Pandas)、应用(echarts、大屏展示)和Hadoop家族。</p>
-                        <p>数据库：MySQL、Oracle、NoSQL(Redis、MongoDB、HBASE)。</p>
-                        <p>服务器：Nginx、Tomcat。</p>
-                        <p>目前钻研Fedora上环境运维，如：nginx与gitlab的共存；Linux上ftp服务器的选择；Linux搭建查看资源的cockpit操作。</p>
-                        </p>
-                        <div class="spacer-10"></div>
-                        <span id="btn-show-skills" class="btn-border wow fadeInUp" data-wow-delay="1s">技能熟练度</span>
-                    </div>
-                </div>
-
-                <div id="skills" class="row">
-                    <div class="spacer-double"></div>
-                    <div class="spacer-double"></div>
-                    <div class="col-md-4">
-                        <div class="skill-bar style-2">
-                            <h5>C</h5>
-                            <div class="de-progress">
-                                <div class="value">100%</div>
-                                <div class="progress-bar" data-value="60%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-bar style-2">
-                            <h5>Java</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="65%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="skill-bar style-2">
-                            <h5>Python</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="75%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-bar style-2">
-                            <h5>H5</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="70%"></div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="skill-bar style-2">
-                            <h5>PHP</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="60%"></div>
-                            </div>
-                        </div>
-
-                        <div class="skill-bar style-2">
-                            <h5>Linux</h5>
-                            <div class="de-progress">
-                                <div class="value"></div>
-                                <div class="progress-bar" data-value="75%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-
-        <!-- 未知用意 -->
-        <div id="loader-area">
-            <div class="container">
-                <div class="project-load"></div>
-            </div>
-        </div>
-
-
-
-        <section id="section-contact" class="no-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 offset-lg-3">
-                        <div class="text-center">
-                            <h2>联系</h2>
-                            <p>人生相逢就是缘，哪怕天涯海角也想念；轻轻的一句问候，带去我诚挚的祝愿；悄悄的一声祝福，捎去我美好的心愿；祝你快乐天天，幸福天天！</p>
-                            <div class="spacer-30"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <form name="contactForm" id="contact_form" class="row form-default" method="post" action="###">
-                    <div class="col-md-6">
-                        <div class="field-set">
-                            <input type="text" name="name" id="name" class="form-control" placeholder="你的名字：" />
-                            <div class="line-fx"></div>
-                        </div>
-
-                        <div class="field-set">
-                            <input type="text" name="email" id="email" class="form-control" placeholder="你的邮箱：" />
-                            <div class="line-fx"></div>
-                        </div>
-
-                        <div class="field-set">
-                            <input type="text" name="phone" id="phone" class="form-control" placeholder="你的手机号码：" />
-                            <div class="line-fx"></div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="field-set">
-                            <textarea name="message" id="message" class="form-control" placeholder="你的意见："></textarea>
-                            <div class="line-fx"></div>
-                        </div>
-                    </div>
-
-                    <div class="spacer-single"></div>
-
-                    <div class="col-md-12 text-center">
-                        <div id="submit">
-                            <input type="submit" id="send_message" value="提交" class="btn btn-custom color-2" />
-                        </div>
-                        <div id="mail_success" class="success">我已经收到了，请耐心等待！</div>
-                        <div id="mail_fail" class="error">对不起，你的邮件我未收到，请重新确认一下，再发送一次，谢谢你哦！</div>
-                    </div>
-                </form>
-
-                <div class="spacer-double"></div>
-
-                <div class="row text-center wow fadeInUp">
-                    <div class="col-md-4">
-                        <div class="wm-1"></div>
-                        <i class="icon_mobile id-color size40 mb20"></i>
-                        <h6 class="id-color">电话</h6>
-                        <p>(+86) 152 xxxx xxxx</p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="wm-1"></div>
-                        <i class="icon_house_alt id-color size40 mb20"></i>
-                        <h6 class="id-color">地址</h6>
-                        <p>中国 安徽 合肥</p>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="wm-1"></div>
-                        <i class="icon_mail_alt id-color size40 mb20"></i>
-                        <h6 class="id-color">邮箱</h6>
-                        <p>kongzeng.wt@foxmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-</div>
-
-<footer class="footer">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 sm-text-center mb-sm-30">
-                &copy; Copyright 2023 - xierKZ
-            </div>
-
-            <div class="col-md-6 text-md-right text-sm-left">
-                <div class="social-icons">
-                    <a href="https://github.com/xierkz"><i class="fa fa-github fa-lg"></i></a>
-                    <a href="https://store.steampowered.com"><i class="fa fa-steam fa-lg"></i></a>
-                    <a href="https://xierkz.pro"><i class="fa fa-won fa-lg"></i></a>
-                    <a href="mailto:xierkz@gmail.com"><i class="fa fa-google fa-lg"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-<a href="#" id="back-to-top"></a>
-
-<div id="preloader">
-    <div class="spinner">
-        <div class="bounce1"></div>
-        <div class="bounce2"></div>
-        <div class="bounce3"></div>
-    </div>
-</div>
-
-
-<script src="./js/jquery.min.js"></script>
-<script src="./js/bootstrap.min.js"></script>
-<script src="./js/wow.min.js"></script>
-<script src="./js/jquery.isotope.min.js"></script>
-<script src="./js/easing.js"></script>
-<script src="./js/owl.carousel.js"></script>
-<script src="./js/validation.js"></script>
-<script src="./js/jquery.magnific-popup.min.js"></script>
-<script src="./js/enquire.min.js"></script>
-<script src="./js/jquery.stellar.min.js"></script>
-<script src="./js/jquery.plugin.js"></script>
-<script src="./js/typed.js"></script>
-<script src="./js/typed-custom.js"></script>
-<script src="./js/jquery.countTo.js"></script>
-<script src="./js/jquery.countdown.js"></script>
-<script src="./js/designesia.js"></script>
 
 <body>
+    <h1>我的畅看名单</h1>
+    <div style="padding-left: 30%;">
+        友情链接：&nbsp;<a href="https://v.qq.com/channel/cartoon">腾讯视频</a> &nbsp;&nbsp; <a
+            href="http://70kankan.com">70看看</a> &nbsp;&nbsp; <a href="https://www.iqiyi.com/dongman/">爱奇艺</a>
+    </div>
+
+    <div class="bro">
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://puui.qpic.cn/vcover_vt_pic/0/mzc00200cu8uq8c1660030766362/0?max_age=7776000" alt="万界独尊"
+                class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+
+            <!-- 名字 -->
+            <p>万界独尊</p>
+
+            <!-- 更新时间 -->
+            <p>每周二、六10:00更新1集</p>
+
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mzc00200cu8uq8c.html">官方链接</a></p>
+
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第221集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/65080/">选集菜单 (第三方)</a></p>
+
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/65080/220.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://puui.qpic.cn/vcover_vt_pic/0/mzc002006n62s111691466247384/0?max_age=7776000" alt="炼气十万年"
+                class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>炼气十万年</p>
+
+            <!-- 更新时间 -->
+            <p>每周二、六10:00更新1集</p>
+
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mzc002006n62s11.html">官方链接</a></p>
+
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第120集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/79514/">选集菜单 (第三方)</a></p>
+
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/79514/119.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://puui.qpic.cn/vcover_vt_pic/0/mcv8hkc8zk8lnov1691482685031/0?max_age=7776000" alt="完美世界"
+                class="pic">
+        </div>
+
+        <div style="padding-left: 250px">
+            <!-- 名字 -->
+            <p>完美世界</p>
+
+            <!-- 更新时间 -->
+            <p>每周五10:00更新1集</p>
+
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mcv8hkc8zk8lnov.html">官方链接</a></p>
+
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第157集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/58530/">选集菜单 (第三方)</a></p>
+
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/58530/156.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://puui.qpic.cn/vcover_vt_pic/0/mzc00200ilydv1a1620815950817/0?max_age=7776000" alt="无上神帝"
+                class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>无上神帝</p>
+
+            <!-- 更新时间 -->
+            <p>每周一、五10:00更新1集</p>
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mzc00200ilydv1a.html">官方链接</a></p>
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第366集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/55626/">选集菜单 (第三方)</a></p>
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/55626/365.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://puui.qpic.cn/vcover_vt_pic/0/7q544xyrava3vxf1610952810187/0?max_age=7776000" alt="武神主宰"
+                class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>武神主宰</p>
+
+            <!-- 更新时间 -->
+            <p>每周二、日10:00更1集</p>
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/7q544xyrava3vxf.html">官方链接</a></p>
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第424集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/53125/">选集菜单 (第三方)</a></p>
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/53125/423.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://puui.qpic.cn/vcover_vt_pic/0/mzc00200qqsk3cv1691464821337/0?max_age=7776000" alt="独步逍遥"
+                class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>独步逍遥</p>
+
+            <!-- 更新时间 -->
+            <p>每周一、四10:00更新1集</p>
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mzc00200qqsk3cv.html">官方链接</a></p>
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第404集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/56727/">选集菜单 (第三方)</a></p>
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/56727/403.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://vcover-vt-pic.puui.qpic.cn/vcover_vt_pic/0/mzc00200n53vkqc1705466094765/0?max_age=7776000"
+                alt="遮天" class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>遮天</p>
+
+            <!-- 更新时间 -->
+            <p>每周三10:00更新1集</p>
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mzc00200n53vkqc.html">官方链接</a></p>
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第51集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/78918/">选集菜单 (第三方)</a></p>
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/78918/50.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://vcover-vt-pic.puui.qpic.cn/vcover_vt_pic/0/mzc002007j7p5hn1704874112623/0?max_age=7776000"
+                alt="神印王座" class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>神印王座</p>
+
+            <!-- 更新时间 -->
+            <p>每周四10:00更新1集</p>
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mzc002007j7p5hn.html">官方链接</a></p>
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第101集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/73107/">选集菜单 (第三方)</a></p>
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/73107/100.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://vcover-vt-pic.puui.qpic.cn/vcover_vt_pic/0/mzc0020027yzd9e1706851585998/0?max_age=7776000"
+                alt="斗破苍穹年番" class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>斗破苍穹年番</p>
+
+            <!-- 更新时间 -->
+            <p>每周日10:00更新1集</p>
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mzc0020027yzd9e.html">官方链接</a></p>
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第91集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/57416/">选集菜单 (第三方)</a></p>
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/57416/90.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://puui.qpic.cn/vcover_vt_pic/0/mzc00200no18bci1691465021774/0?max_age=7776000" alt="绝世武魂"
+                class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>绝世武魂</p>
+
+            <!-- 更新时间 -->
+            <p>每周三、日10:00更新1集</p>
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mzc00200no18bci.html">官方链接</a></p>
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第361集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/60106/">选集菜单 (第三方)</a></p>
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/60106/361.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://vcover-vt-pic.puui.qpic.cn/vcover_vt_pic/0/mzc00200kwy29cd1711117453168/0?max_age=7776000"
+                alt="诛仙" class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>诛仙</p>
+
+            <!-- 更新时间 -->
+            <p>每周六10:00更新1集</p>
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://v.qq.com/x/cover/mzc00200kwy29cd.html">官方链接</a></p>
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第27集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/73003/">选集菜单 (第三方)</a></p>
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/73003/26.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
+
+    <div class="bro">
+        <div style="float: left;">
+            <!-- 图片 -->
+            <img src="https://pic4.iqiyipic.com/image/20240314/d1/1e/a_100459186_m_601_m20_260_360.jpg?caplist=jpg,webp,avif"
+                alt="大主宰年番" class="pic">
+        </div>
+
+        <div style="padding-left: 250px;">
+            <!-- 名字 -->
+            <p>大主宰年番</p>
+
+            <!-- 更新时间 -->
+            <p>每周五10:00更新1集</p>
+            <!-- 官方播放地址url——方便查看更新 -->
+            <p><a href="https://www.iqiyi.com/v_1d74ab0t9ug.html">官方链接</a></p>
+            <!-- 下一次从哪集开始 -->
+            <p>下一次从第43集开始</p>
+
+            <!-- URL展示 -->
+            <!-- 菜单url -->
+            <p><a href="http://cqdb6.com/acg/81634/">选集菜单 (第三方)</a></p>
+            <!-- 实际集数url -->
+            <p><a href="http://cqdb6.com/acg/81634/42.html">最新一集</a></p>
+
+        </div>
+
+        <!-- 分界线 -->
+        <p>------------------------------------------------------------------------------------------------------------------------------
+        </p>
+    </div>
 
 </body>
 
