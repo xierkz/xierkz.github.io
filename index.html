@@ -1,396 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>我的追番频道</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="./css/style.css">
+		<link rel="stylesheet" href="./css/menu.min.css">
+		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <title>动漫书签</title>
-    <style>
-        * {
-            text-decoration: none;
-            padding: 0;
-            margin: 0;
-            background-color: rgb(176, 146, 204);
-            background-image: url('./images/background.webp');
-            background-position: center center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: cover;
-        }
+	<body id="wrapper">
+		<button id="mm-menu-toggle" class="mm-menu-toggle">Toggle Menu</button>
+		<nav id="mm-menu" class="mm-menu">
+			<div class="mm-menu__header">
+				<h2 class="mm-menu__title">PERFECT</h2>
+			</div>
+			<ul class="mm-menu__items">
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="./index.html">
+						<span class="mm-menu__link-text"><i class="fa fa-home"></i> 主页</span>
+					</a>
+				</li>
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="./single.html">
+						<span class="mm-menu__link-text"><i class="fa fa-inbox"></i> 关于</span>
+					</a>
+				</li>
+				<li class="mm-menu__item">
+					<a class="mm-menu__link" href="./contact.html">
+						<span class="mm-menu__link-text"><i class="fa fa-heart"></i> 联系</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
 
-        h1 {
-            text-align: center;
-            margin: 1.5vw auto 2vh auto;
-        }
+		<div class="top-header">
+			<div class="container">
+				<ul class="list-inline top-social">
+					<li><a href="./index.html"><i class="fa fa-home"></i></a></li>
+					<li><a href="https://github.com/xierkz"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://x.com/xierkz106"><i class="fa fa-twitter"></i></a></li>
+				</ul>
+			</div>
+		</div>
 
-        a {
-            color: #170b7d;
-        }
+		<!-- svg起到装饰作用 -->
+		<div class="svg-container nav-svg svg-block">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+				<g transform="translate(0,-902.36218)"></g>
+				<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+				<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+				<path d="M 0,150 0,0 1925,0"></path>
+			</svg>
+		</div>
 
-        .f1 {
-            width: 42vw;
-            height: 3vh;
-            margin: 0 auto;
-        }
+		<header id="masthead" class="site-header" role="banner" style="background-position: 45% -45px;">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="site-branding">
+					<a href="./index.html" title="PERFECT"><img class="site-logo" src="./images/logo.png"
+							alt="PERFECT"></a>
+				</div>
+			</div>
 
-        .f1 a {
-            float: left;
-            margin-left: 1vw;
-            margin-bottom: 1vh;
-        }
+			<!-- svg起到装饰作用 -->
+			<div class="svg-container header-svg svg-block">
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+					<g transform="translate(0,-902.36218)"></g>
+					<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+					<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+					<path d="m 1925,0 0,150 -1925,0"></path>
+				</svg>
+			</div>
 
-        .f11 {
-            float: left;
-            margin-left: 1vw;
-        }
-
-        .f111 {
-            float: left;
-            margin-left: 1vw;
-        }
-
-        hr {
-            clear: both;
-            width: 65vw;
-            margin: 0 auto;
-        }
-
-        .f2 {
-            margin: 3vh auto;
-        }
-
-        .f22 {
-            margin: 0 auto;
-        }
-
-        td {
-            width: 12vw;
-            height: 12.00vh;
-            border: 3px black double;
-            text-align: center;
-        }
-    </style>
-</head>
-
-<body>
-<h1>喜欢的动漫播放月名单</h1>
-<div class="f1">
-    <a href="https://v.qq.com/channel/cartoon" target="_blank">腾讯视频</a><a href="http://70kankan.com"
-                                                                              target="_blank">70看看</a><a
-        href="https://www.iqiyi.com/dongman/" target="_blank">爱奇艺</a><a
-        href="https://www.acloudmerge.com/" target="_blank">集云数据</a>
-    <div class="f11">
-        <div id="f11" style="float: left;"></div>
-    </div>
-    <div class="f111">更新时间：2024-08</div>
-</div>
-<hr>
-<div class="f2">
-    <table class="f22">
-        <tr>
-            <td>星期一</td>
-            <td>星期二</td>
-            <td>星期三</td>
-            <td>星期四</td>
-            <td>星期五</td>
-            <td>星期六</td>
-            <td>星期日</td>
-        </tr>
-        <tr>
-            <td>
-                <p style="margin-bottom: 1vh"></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh"></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh"></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">1</p>
-                <p><a href="http://cqdb6.com/acg/56727/439.html" target="_blank">独步逍遥_439</a></p>
-                <p><a href="http://cqdb6.com/acg/73107/118.html" target="_blank">神印王座_118</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">2</p>
-                <p><a href="http://cqdb6.com/acg/58530/174.html" target="_blank">完美世界_174</a></p>
-                <p><a href="http://cqdb6.com/acg/55626/400.html" target="_blank">无上神帝_400</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">3</p>
-                <p><a href="http://cqdb6.com/acg/73003/47.html?qp=wj" target="_blank">诛仙_47</a></p>
-                <p><a href="http://cqdb6.com/acg/3742/380.html" target="_blank">妖神记_380</a></p>
-                <p><a href="http://cqdb6.com/acg/65080/257.html" target="_blank">万界独尊_257</a></p>
-                <p><a href="http://cqdb6.com/acg/79514/154.html" target="_blank">炼气十万年_154</a></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">4</p>
-                <p><a href="http://cqdb6.com/acg/74320/41.html" target="_blank">剑道第一仙_41</a></p>
-                <p><a href="http://cqdb6.com/acg/53125/460.html" target="_blank">武神主宰_460</a></p>
-                <p><a href="http://cqdb6.com/acg/57416/108.html" target="_blank">斗破苍穹年番_106</a></p>
-                <p></p>
-            </td>
-        </tr>
-
-        
-        <tr>
-            <td>
-                <p style="margin-bottom: 1vh">5</p>
-                <p><a href="http://cqdb6.com/acg/75241/48.html" target="_blank">仙逆_48</a></p>
-                <p><a href="http://cqdb6.com/acg/56727/440.html" target="_blank">独步逍遥_440</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">6</p>
-                <p><a href="http://cqdb6.com/acg/65080/258.html" target="_blank">万界独尊_258</a></p>
-                <p><a href="http://cqdb6.com/acg/79514/155.html" target="_blank">炼气十万年_155</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">7</p>
-                <p><a href="http://cqdb6.com/acg/78918/69.html" target="_blank">遮天_69</a></p>
-                <p><a href="http://cqdb6.com/acg/74320/42.html" target="_blank">剑道第一仙_42</a></p>
-                <p><a href="http://cqdb6.com/acg/96591/09.html" target="_blank">一念永恒_09</a></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">8</p>
-                <p><a href="http://cqdb6.com/acg/56727/441.html" target="_blank">独步逍遥_441</a></p>
-                <p><a href="http://cqdb6.com/acg/73107/119.html" target="_blank">神印王座_119</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">9</p>
-                <p><a href="http://cqdb6.com/acg/58530/175.html" target="_blank">完美世界_175</a></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">10</p>
-                <p><a href="http://cqdb6.com/acg/73003" target="_blank">诛仙_48-52</a></p>
-                <p><a href="http://cqdb6.com/acg/65080/259.html" target="_blank">万界独尊_259</a></p>
-                <p><a href="http://cqdb6.com/acg/79514/156.html" target="_blank">炼气十万年_156</a></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">11</p>
-                <p><a href="http://cqdb6.com/acg/74320/43.html" target="_blank">剑道第一仙_43</a></p>
-                <p><a href="http://cqdb6.com/acg/57416/109.html" target="_blank">斗破苍穹年番_107</a></p>
-                <p></p>
-                <p></p>
-            </td>
-        </tr>
-
-        
-        <tr>
-            <td>
-                <p style="margin-bottom: 1vh">12</p>
-                <p><a href="http://cqdb6.com/acg/75241/49.html" target="_blank">仙逆_49</a></p>
-                <p><a href="http://cqdb6.com/acg/56727/442.html" target="_blank">独步逍遥_442</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">13</p>
-                <p><a href="http://cqdb6.com/acg/65080/260.html" target="_blank">万界独尊_260</a></p>
-                <p><a href="http://cqdb6.com/acg/79514/157.html" target="_blank">炼气十万年_157</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">14</p>
-                <p><a href="http://cqdb6.com/acg/78918/70.html" target="_blank">遮天_70</a></p>
-                <p><a href="http://cqdb6.com/acg/74320/44.html" target="_blank">剑道第一仙_44</a></p>
-                <p><a href="http://cqdb6.com/acg/96591/10.html" target="_blank">一念永恒_10</a></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">15</p>
-                <p><a href="http://cqdb6.com/acg/56727/443.html" target="_blank">独步逍遥_443</a></p>
-                <p><a href="http://cqdb6.com/acg/73107/120.html" target="_blank">神印王座_120</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">16</p>
-                <p><a href="http://cqdb6.com/acg/58530/176.html" target="_blank">完美世界_176</a></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">17</p>
-                <p><a href="http://cqdb6.com/acg/65080/261.html" target="_blank">万界独尊_261</a></p>
-                <p><a href="http://cqdb6.com/acg/79514/158.html" target="_blank">炼气十万年_158</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">18</p>
-                <p><a href="http://cqdb6.com/acg/74320/45.html" target="_blank">剑道第一仙_45</a></p>
-                <p><a href="http://cqdb6.com/acg/57416/110.html" target="_blank">斗破苍穹年番_108</a></p>
-                <p></p>
-                <p></p>
-            </td>
-        </tr>
+		</header>
 
 
-        <tr>
-            <td>
-                <p style="margin-bottom: 1vh">19</p>
-                <p><a href="http://cqdb6.com/acg/75241/50.html" target="_blank">仙逆_50</a></p>
-                <p><a href="http://cqdb6.com/acg/56727/444.html" target="_blank">独步逍遥_444</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">20</p>
-                <p><a href="http://cqdb6.com/acg/65080/262.html" target="_blank">万界独尊_262</a></p>
-                <p><a href="http://cqdb6.com/acg/79514/159.html" target="_blank">炼气十万年_159</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">21</p>
-                <p><a href="http://cqdb6.com/acg/78918/71.html" target="_blank">遮天_71</a></p>
-                <p><a href="http://cqdb6.com/acg/74320/46.html" target="_blank">剑道第一仙_46</a></p>
-                <p><a href="http://cqdb6.com/acg/96591/11.html" target="_blank">一念永恒_11</a></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">22</p>
-                <p><a href="http://cqdb6.com/acg/56727/445.html" target="_blank">独步逍遥_445</a></p>
-                <p><a href="http://cqdb6.com/acg/73107/121.html" target="_blank">神印王座_121</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">23</p>
-                <p><a href="http://cqdb6.com/acg/58530/177.html" target="_blank">完美世界_177</a></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">24</p>
-                <p><a href="http://cqdb6.com/acg/65080/263.html" target="_blank">万界独尊_263</a></p>
-                <p><a href="http://cqdb6.com/acg/79514/160.html" target="_blank">炼气十万年_160</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">25</p>
-                <p><a href="http://cqdb6.com/acg/74320/47.html" target="_blank">剑道第一仙_47</a></p>
-                <p><a href="http://cqdb6.com/acg/57416/111.html" target="_blank">斗破苍穹年番_109</a></p>
-                <p></p>
-                <p></p>
-            </td>
-        </tr>
 
 
-        <tr>
-            <td>
-                <p style="margin-bottom: 1vh">26</p>
-                <p><a href="http://cqdb6.com/acg/75241/51.html" target="_blank">仙逆_51</a></p>
-                <p><a href="http://cqdb6.com/acg/56727/446.html" target="_blank">独步逍遥_446</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">27</p>
-                <p><a href="http://cqdb6.com/acg/65080/264.html" target="_blank">万界独尊_264</a></p>
-                <p><a href="http://cqdb6.com/acg/79514/161.html" target="_blank">炼气十万年_161</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">28</p>
-                <p><a href="http://cqdb6.com/acg/78918/72.html" target="_blank">遮天_72</a></p>
-                <p><a href="http://cqdb6.com/acg/74320/48.html" target="_blank">剑道第一仙_48</a></p>
-                <p><a href="http://cqdb6.com/acg/96591/12.html" target="_blank">一念永恒_12</a></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">29</p>
-                <p><a href="http://cqdb6.com/acg/56727/447.html" target="_blank">独步逍遥_447</a></p>
-                <p><a href="http://cqdb6.com/acg/73107/122.html" target="_blank">神印王座_122</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">30</p>
-                <p><a href="http://cqdb6.com/acg/58530/178.html" target="_blank">完美世界_178</a></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh">31</p>
-                <p><a href="http://cqdb6.com/acg/65080/265.html" target="_blank">万界独尊_265</a></p>
-                <p><a href="http://cqdb6.com/acg/79514/162.html" target="_blank">炼气十万年_162</a></p>
-                <p></p>
-                <p></p>
-            </td>
-            <td>
-                <p style="margin-bottom: 1vh"></p>
-                <p></p>
-                <p></p>
-                <p></p>
-                <p></p>
-            </td>
-        </tr>
-    </table>
-</div>
-<hr>
-<footer style="text-align: center; margin: 4vh auto 2vh auto;">
-    <div style="color: #E6E6FA;font-size: larger">By <a href="https://github.com/xierkz" target="_blank">@xierkz</a>
-        &nbsp;V1.0.4
-    </div>
-</footer>
-</body>
-<script>
-    function updateTime() {
-        var currentTime = new Date();
-        var years = currentTime.getFullYear();
-        var months = currentTime.getMonth();
-        var days = currentTime.getDay();
-        var hours = currentTime.getHours();
-        var minutes = currentTime.getMinutes();
-        var seconds = currentTime.getSeconds();
+		<div id="page-content" class="index-page">
+			<section class="box-content box-5 box-style-3" id="nav-blog">
+				<div class="container">
+					<div class="row">
+						<!-- 模板 -->
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/xianni.jpg" alt=仙逆"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/75241/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mzc00200aaogpgh/r0047gdjpw6.html"
+											target="_blank">仙逆</a>
+									</h3>
+									<p>播放时间：每周一10点更新</p>
+									<p>月初第一集：第52集</p>
+									<span id="time0"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
 
-        months = (months < 10) ? "0" + months : months;
-        days = (days < 10) ? "0" + days : days;
-        hours = (hours < 10) ? "0" + hours : hours;
-        minutes = (minutes < 10) ? "0" + minutes : minutes;
-        seconds = (seconds < 10) ? "0" + seconds : seconds;
-        var formattedTime = years + "-" + months + "-" + days + "   " + hours + ":" + minutes + ":" + seconds;
-        document.getElementById("f11").innerText = formattedTime;
-    }
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/dubuxiaoyao.jpg" alt=独步逍遥"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/56727/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mzc00200qqsk3cv/r003432o3ui.html"
+											target="_blank">独步逍遥</a>
+									</h3>
+									<p>播放时间：每周一、周四10点更新</p>
+									<p>月初第一集：第448集</p>
+									<span id="time1"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
 
-    setInterval(updateTime, 1000);
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/wanjieduzun.jpg" alt=万界独尊"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/65080/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mzc00200cu8uq8c/s0036hj72rn.html"
+											target="_blank">万界独尊</a>
+									</h3>
+									<p>播放时间：每周二、周六10点更新</p>
+									<p>月初第一集：第266集</p>
+									<span id="time2"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
 
-    updateTime();
-</script>
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/lianqishiwannian.jpg" alt=炼气十万年"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/79514/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mzc002006n62s11/e0045s2g2eg.html"
+											target="_blank">炼气十万年</a>
+									</h3>
+									<p>播放时间：每周二、周六10点更新</p>
+									<p>月初第一集：第163集</p>
+									<span id="time3"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
 
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/wushenzhuzai.png" alt=武神主宰"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/53125/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/7q544xyrava3vxf/p0033468jnx.html"
+											target="_blank">武神主宰</a>
+									</h3>
+									<p>播放时间：每周二、周日10点更新</p>
+									<p>月初第一集：第473集</p>
+									<span id="time4"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/zhetian.jpg" alt=遮天"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/78918/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mzc00200n53vkqc/v0046otbtmj.html"
+											target="_blank">遮天</a>
+									</h3>
+									<p>播放时间：每周三10点更新</p>
+									<p>月初第一集：第73集</p>
+									<span id="time5"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/yinianyongheng.jpg" alt=一念永恒"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/96591/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mzc002003lw1kp8/c41002vti5z.html"
+											target="_blank">一念永恒</a>
+									</h3>
+									<p>播放时间：每周三10点更新</p>
+									<p>月初第一集：第13集</p>
+									<span id="time6"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/jiandaodiyixian.jpg" alt=剑道第一仙"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/74320/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mzc00200bkls85f/r0043n4wmpa.html"
+											target="_blank">剑道第一仙</a>
+									</h3>
+									<p>播放时间：每周三、周日10点更新</p>
+									<p>月初第一集：第51集</p>
+									<span id="time7"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/shixiongashixionga.jpg" alt=师兄啊师兄"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/78911/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.youku.com/v_show/id_XNTkzNjcwOTkwOA==.html"
+											target="_blank">师兄啊师兄</a>
+									</h3>
+									<p>播放时间：每周四10点更新</p>
+									<p>月初第一集：第53集</p>
+									<span id="time8"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/shenyinwangzuo.png" alt=神印王座"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/73107/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mzc002007j7p5hn/k0042sids9q.html"
+											target="_blank">神印王座</a>
+									</h3>
+									<p>播放时间：每周四10点更新</p>
+									<p>月初第一集：第123集</p>
+									<span id="time9"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/wanmeishijie.jpg" alt=完美世界"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/58530/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mcv8hkc8zk8lnov/x0036x5qqsr.html"
+											target="_blank">完美世界</a>
+									</h3>
+									<p>播放时间：每周五10点更新</p>
+									<p>月初第一集：第179集</p>
+									<span id="time10"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/bailianchengshen2.jpg" alt=百炼成神"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/58530/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mcv8hkc8zk8lnov/x0036x5qqsr.html"
+											target="_blank">百炼成神</a>
+									</h3>
+									<p>播放时间：每周五10点更新</p>
+									<p>月初第一集：第93集</p>
+									<span id="time11"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/fanrenxiuxianzhuan.png" alt=凡人修仙传"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/6907/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://www.bilibili.com/bangumi/play/ep733316"
+											target="_blank">凡人修仙传</a>
+									</h3>
+									<p>播放时间：每周六10点更新</p>
+									<p>月初第一集：第118集</p>
+									<span id="time12"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="box-item">
+								<div class="svg-container post-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1950 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="M 0,150 0,0 1925,0"></path>
+									</svg>
+								</div>
+								<div class="entry-thumb">
+									<img class="img-responsive" src="./images/doupocangqiong.jpg" alt=斗破苍穹"">
+									<a class="thumb-link" href="http://cqdb6.com/acg/57416/" target="_blank"><i
+											class="fa fa-link"></i></a>
+								</div>
+								<div class="content">
+									<h3 class="entry-title">
+										<a href="https://v.qq.com/x/cover/mzc0020027yzd9e/q0043cz9x20.html"
+											target="_blank">斗破苍穹</a>
+									</h3>
+									<p>播放时间：每周日10点更新</p>
+									<p>月初第一集：第110集</p>
+									<span id="time13"></span><br>
+								</div>
+								<div class="read-more">
+									<a href="#">继续期待中…</a>
+								</div>
+								<div class="svg-container post-bottom-svg svg-block">
+									<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+										<g transform="translate(0,-902.36218)"></g>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+										<path d="m 1925,0 0,150 -1925,0"></path>
+									</svg>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<div class="svg-container footer-svg svg-block">
+			<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 1890 150">
+				<g transform="translate(0,-902.36218)"></g>
+				<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+				<path d="m 898.41609,-33.21176 0.01,0 -0.005,-0.009 -0.005,0.009 z"></path>
+				<path d="m 1925,0 0,150 -1925,0"></path>
+			</svg>
+		</div>
+
+		<footer>
+			<div class="wrap-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4">
+							<span class="copyright">Copyright &copy; 2024.xierkz All rights reserved.</span>
+						</div>
+						<div class="col-md-4">
+							<ul class="list-inline social-buttons">
+								<li><a href="mailto:xierkz@gmail.com.com"><i class="fa fa-home"></i></a>
+								</li>
+								<li><a href="https://github.com/xierkz"><i class="fa fa-github"></i></a>
+								</li>
+								<li><a href="https://x.com/xierkz106"><i class="fa fa-twitter"></i></a>
+								</li>
+								<li><a href="./index.html"><i class="fa fa-dollar"></i></a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-4">
+							<ul class="list-inline quicklinks">
+								<li><a href="./single.html">Privacy Policy</a>
+								</li>
+								<li><a href="./single.html">Terms of Use</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="./js/jquery.js"></script>
+		<script src="./js/materialMenu.js"></script>
+		<script>
+			var menu = new Menu;
+		</script>
+		<script src="./js/bootstrap.min.js"></script>
+		<script src="./js/nowtime.js"></script>
+
+	</body>
 </html>
