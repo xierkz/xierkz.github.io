@@ -31,6 +31,7 @@ function showTime() {
 	document.getElementById("time11").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
 	document.getElementById("time12").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
 	document.getElementById("time13").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
+	document.getElementById("time14").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
 }
 
 setInterval(showTime, 1000);
