@@ -17,21 +17,11 @@ function showTime() {
 
 	s = s < 10 ? '0' + s : s;
 
-	document.getElementById("time0").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time1").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time2").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time3").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time4").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time5").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time6").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time7").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time8").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time9").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time10").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time11").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time12").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time13").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
-	document.getElementById("time14").innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
+	var tt;
+	for (var i = 0; i < 15; i++) {
+		tt = 'time'+i;
+		document.getElementById(tt).innerHTML = "此刻时间为 " + y + "年" + m1 + "月" + d + "日 " + h + "时" + m + "分" + s + "秒";
+	}
 }
 
 setInterval(showTime, 1000);
