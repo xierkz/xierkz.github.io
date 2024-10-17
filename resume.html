@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>我的追番频道</title>
+    <title>我的简历页面</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
@@ -93,14 +93,10 @@
         </div>
 
         <div class="post">
-            <h1 class="entry-title">联系</h1>
-            <ul id="zs">
-                <li>1、我的GitHub：<a href="https://github.com/xierkz" target="_blank">@xierkz</a></li>
-                <li>2、我的Gitee：&nbsp;&nbsp;<a href="https://gitee.com/xierkz" target="_blank">@xierkz</a></li>
-                <li>3、我的邮箱：&nbsp;&nbsp;&nbsp;<a href="mailto:xierkz@gmail.com.com">@xierkz</a></li>
-                <li>4、我的简历：&nbsp;&nbsp;&nbsp;<a href="./resume.html">我的简历</a></li>
-                <li>5、我的主站：&nbsp;&nbsp;&nbsp;<a href="#">待建中…</a></li>
-            </ul>
+            <h1 class="entry-title">感谢你阅读我的简历</h1>
+            <div style="text-align: center">
+                <img src="./images/2024-10-10_CV_02.jpg" alt="my cv" style="width: 820px;height: 1160px;">
+            </div>
         </div>
 
         <div class="svg-container single-post-svg single-svg-bottom svg-block">
@@ -161,13 +157,27 @@
     </div>
 </footer>
 
+<!-- Top Slider -->
+<script src="js/jquery.js"></script>
 
-<script src="./js/jquery.js"></script>
-<script src="./js/materialMenu.js"></script>
+<!-- Menu Js -->
+<script src="js/materialMenu.js"></script>
 <script>
     var menu = new Menu;
 </script>
-<script src="./js/bootstrap.min.js"></script>
 
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- Google Map -->
+<script>
+    $('.maps').click(function () {
+        $('.maps iframe').css("pointer-events", "auto");
+    });
+
+    $(".maps").mouseleave(function () {
+        $('.maps iframe').css("pointer-events", "none");
+    });
+</script>
 </body>
 </html>
