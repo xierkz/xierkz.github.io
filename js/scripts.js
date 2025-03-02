@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             .then(response => response.text())
             .then(data => {
                 content.innerHTML = data;
+                handlePageLoad(data);
             })
             .catch(error => {
                 content.innerHTML = '<p>加载内容失败，请稍后再试。</p>';
@@ -32,3 +33,12 @@ document.addEventListener('DOMContentLoaded', function() {
         links[0].classList.add('active'); // 默认选中第一个链接
     }
 });
+
+function handlePageLoad(content) {
+    if (content.includes('resume-section')) {
+        document.body.style.backgroundColor = '#f7fafc';
+        return true;
+    }
+    document.body.style.backgroundColor = '';
+    return false;
+}
