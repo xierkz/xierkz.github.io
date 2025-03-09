@@ -196,7 +196,7 @@ ul li {
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(93% - 20px);
+    width: calc(96% - 10px);
     display: flex;
     align-items: center;
     text-align: left;
@@ -1455,6 +1455,32 @@ footer a:hover {
 
 .github-icon {
     font-size: 1.2em;
+}
+
+.section_time {
+    color: #6b7280;
+    font-size: 0.9em;
+    padding: 8px 15px;
+    background: rgba(79, 70, 229, 0.05);
+    border-radius: 6px;
+    display: inline-block;
+    border: 1px solid rgba(79, 70, 229, 0.1);
+    margin: 10px 0;
+    width: calc(20% - 20px);
+}
+
+.section_time::before {
+    content: '🕒';
+    margin-right: 6px;
+}
+
+@media (max-width: 768px) {
+    .section_time {
+        font-size: 0.9em;
+        padding: 6px 12px;
+        margin: 8px 0;
+        width: auto;
+    }
 }
 
 @media (max-width: 768px) {
