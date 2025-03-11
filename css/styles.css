@@ -1,8 +1,9 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
-    background: url('../pic/background.webp') no-repeat center center fixed;
+    background: url('../pic/background.jpg') no-repeat center center fixed;
     background-size: cover;
     background-color: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(12px);
@@ -39,7 +40,7 @@ h1 {
 .container {
     max-width: 1200px;
     margin: 20px auto;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     height: calc(100vh - 60px);
     padding: 20px;
@@ -51,7 +52,7 @@ h1 {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: #ffffff;
     padding: 20px 15px;
-    box-shadow: 2px 0 15px rgba(0,0,0,0.1);
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.1);
     overflow-y: auto;
     flex-shrink: 0;
     border-radius: 12px;
@@ -127,6 +128,7 @@ h1 {
 .sidebar ul li:nth-child(5) a::before {
     content: '💀';
 }
+
 .sidebar ul li:nth-child(4) a::before {
     content: '🎏';
 }
@@ -245,13 +247,13 @@ a:hover {
     color: #4f46e5;
 }
 
-.work-details a, 
+.work-details a,
 .project-details a,
 .skills-list a {
     color: #4f46e5;
 }
 
-.work-details a:hover, 
+.work-details a:hover,
 .project-details a:hover,
 .skills-list a:hover {
     color: #6366f1;
@@ -624,11 +626,9 @@ footer a:hover {
 .resume-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 25px rgba(79, 70, 229, 0.15);
-    background: linear-gradient(
-        to right bottom,
-        rgba(255, 255, 255, 0.98),
-        rgba(249, 250, 251, 0.95)
-    );
+    background: linear-gradient(to right bottom,
+            rgba(255, 255, 255, 0.98),
+            rgba(249, 250, 251, 0.95));
 }
 
 .resume-card h2 {
@@ -689,19 +689,27 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
-.skills-list, .work-details, .project-details, .evaluation-list {
+.skills-list,
+.work-details,
+.project-details,
+.evaluation-list {
     list-style: none;
     padding-left: 0;
 }
 
-.skills-list li, .work-details li, .project-details li, .evaluation-list li {
+.skills-list li,
+.work-details li,
+.project-details li,
+.evaluation-list li {
     margin-bottom: 8px;
     padding-left: 20px;
     position: relative;
 }
 
-.skills-list li:before, .work-details li:before, 
-.project-details li:before, .evaluation-list li:before {
+.skills-list li:before,
+.work-details li:before,
+.project-details li:before,
+.evaluation-list li:before {
     content: "•";
     color: #4f46e5;
     position: absolute;
@@ -722,7 +730,7 @@ footer a:hover {
     .timeline-item {
         flex-direction: column;
     }
-    
+
     .timeline-item .date {
         writing-mode: horizontal-tb;
         min-width: auto;
@@ -730,11 +738,11 @@ footer a:hover {
         margin: 0 0 10px 0;
         padding: 4px 12px;
     }
-    
+
     .timeline-item .date {
         margin-bottom: 10px;
     }
-    
+
     .basic-info {
         flex-direction: column;
         align-items: center;
@@ -745,11 +753,11 @@ footer a:hover {
         padding: 20px;
         margin-bottom: 20px;
     }
-    
+
     .resume-section {
         padding: 15px;
     }
-    
+
     .resume-card:hover {
         transform: none;
         box-shadow: 0 4px 15px rgba(79, 70, 229, 0.1);
@@ -814,45 +822,33 @@ footer a:hover {
     height: 100%;
     clip: rect(0, 100px, 200px, 0);
     border-radius: 50%;
-    background: conic-gradient(
-        #4f46e5 0% 80%, 
-        #ddd 80% 100%
-    );
+    background: conic-gradient(#4f46e5 0% 80%,
+            #ddd 80% 100%);
 }
 
 .skill-chart .skill:nth-child(1) .fill {
-    background: conic-gradient(
-        #4f46e5 0% 80%, 
-        #ddd 80% 100%
-    );
+    background: conic-gradient(#4f46e5 0% 80%,
+            #ddd 80% 100%);
 }
 
 .skill-chart .skill:nth-child(2) .fill {
-    background: conic-gradient(
-        #4f46e5 0% 50%, 
-        #ddd 50% 100%
-    );
+    background: conic-gradient(#4f46e5 0% 50%,
+            #ddd 50% 100%);
 }
 
 .skill-chart .skill:nth-child(3) .fill {
-    background: conic-gradient(
-        #4f46e5 0% 75%, 
-        #ddd 75% 100%
-    );
+    background: conic-gradient(#4f46e5 0% 75%,
+            #ddd 75% 100%);
 }
 
 .skill-chart .skill:nth-child(4) .fill {
-    background: conic-gradient(
-        #4f46e5 0% 65%, 
-        #ddd 65% 100%
-    );
+    background: conic-gradient(#4f46e5 0% 65%,
+            #ddd 65% 100%);
 }
 
 .skill-chart .skill:nth-child(5) .fill {
-    background: conic-gradient(
-        #4f46e5 0% 90%, 
-        #ddd 90% 100%
-    );
+    background: conic-gradient(#4f46e5 0% 90%,
+            #ddd 90% 100%);
 }
 
 .skills-container {
@@ -928,28 +924,53 @@ footer a:hover {
 }
 
 @keyframes load-c {
-    from { background: conic-gradient(#4f46e5 0%, #edf2f7 0); }
-    to { background: conic-gradient(#4f46e5 80%, #edf2f7 0); }
+    from {
+        background: conic-gradient(#4f46e5 0%, #edf2f7 0);
+    }
+
+    to {
+        background: conic-gradient(#4f46e5 80%, #edf2f7 0);
+    }
 }
 
 @keyframes load-java {
-    from { background: conic-gradient(#4f46e5 0%, #edf2f7 0); }
-    to { background: conic-gradient(#4f46e5 50%, #edf2f7 0); }
+    from {
+        background: conic-gradient(#4f46e5 0%, #edf2f7 0);
+    }
+
+    to {
+        background: conic-gradient(#4f46e5 50%, #edf2f7 0);
+    }
 }
 
 @keyframes load-python {
-    from { background: conic-gradient(#4f46e5 0%, #edf2f7 0); }
-    to { background: conic-gradient(#4f46e5 75%, #edf2f7 0); }
+    from {
+        background: conic-gradient(#4f46e5 0%, #edf2f7 0);
+    }
+
+    to {
+        background: conic-gradient(#4f46e5 75%, #edf2f7 0);
+    }
 }
 
 @keyframes load-php {
-    from { background: conic-gradient(#4f46e5 0%, #edf2f7 0); }
-    to { background: conic-gradient(#4f46e5 65%, #edf2f7 0); }
+    from {
+        background: conic-gradient(#4f46e5 0%, #edf2f7 0);
+    }
+
+    to {
+        background: conic-gradient(#4f46e5 65%, #edf2f7 0);
+    }
 }
 
 @keyframes load-html {
-    from { background: conic-gradient(#4f46e5 0%, #edf2f7 0); }
-    to { background: conic-gradient(#4f46e5 90%, #edf2f7 0); }
+    from {
+        background: conic-gradient(#4f46e5 0%, #edf2f7 0);
+    }
+
+    to {
+        background: conic-gradient(#4f46e5 90%, #edf2f7 0);
+    }
 }
 
 @media (max-width: 768px) {
@@ -958,11 +979,11 @@ footer a:hover {
         padding: 15px 10px;
         justify-content: flex-start;
     }
-    
+
     .skill-item {
         flex: 0 0 80px;
     }
-    
+
     .skill-circle {
         width: 50px;
         height: 50px;
@@ -970,28 +991,53 @@ footer a:hover {
 }
 
 @keyframes load-c {
-    from { transform: rotate(-90deg); }
-    to { transform: rotate(198deg); }
+    from {
+        transform: rotate(-90deg);
+    }
+
+    to {
+        transform: rotate(198deg);
+    }
 }
 
 @keyframes load-java {
-    from { transform: rotate(-90deg); }
-    to { transform: rotate(90deg); }
+    from {
+        transform: rotate(-90deg);
+    }
+
+    to {
+        transform: rotate(90deg);
+    }
 }
 
 @keyframes load-python {
-    from { transform: rotate(-90deg); }
-    to { transform: rotate(180deg); }
+    from {
+        transform: rotate(-90deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
 }
 
 @keyframes load-php {
-    from { transform: rotate(-90deg); }
-    to { transform: rotate(144deg); }
+    from {
+        transform: rotate(-90deg);
+    }
+
+    to {
+        transform: rotate(144deg);
+    }
 }
 
 @keyframes load-html {
-    from { transform: rotate(-90deg); }
-    to { transform: rotate(234deg); }
+    from {
+        transform: rotate(-90deg);
+    }
+
+    to {
+        transform: rotate(234deg);
+    }
 }
 
 @media (max-width: 768px) {
@@ -999,7 +1045,7 @@ footer a:hover {
         width: 80px;
         height: 80px;
     }
-    
+
     .skills-container {
         gap: 20px;
     }
@@ -1016,20 +1062,20 @@ footer a:hover {
     .skills-container {
         gap: 20px;
     }
-    
+
     .skill-item {
         width: 90px;
     }
-    
+
     .skill-chart {
         width: 80px;
         height: 80px;
     }
-    
+
     .skill-chart .skill::before {
         clip: rect(0px, 40px, 80px, 0px);
     }
-    
+
     .skill-chart .skill::after {
         clip: rect(0px, 80px, 80px, 40px);
     }
@@ -1094,6 +1140,7 @@ footer a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -1105,6 +1152,7 @@ footer a:hover {
         transform: translateY(20px);
         opacity: 0;
     }
+
     to {
         transform: translateY(0);
         opacity: 1;
@@ -1116,6 +1164,7 @@ footer a:hover {
         transform: scale(0.8);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -1123,8 +1172,13 @@ footer a:hover {
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideInLeft {
@@ -1132,6 +1186,7 @@ footer a:hover {
         transform: translateX(-20px);
         opacity: 0;
     }
+
     to {
         transform: translateX(0);
         opacity: 1;
@@ -1280,22 +1335,22 @@ footer a:hover {
     .timeline-item {
         padding-left: 20px;
     }
-    
+
     .timeline-item .content {
         padding: 12px 15px;
     }
-    
+
     .timeline-item .date {
         font-size: 0.85em;
         padding: 3px 10px;
     }
-    
+
     .skills-container {
         padding: 15px;
         justify-content: center;
         gap: 20px;
     }
-    
+
     .skill-item {
         min-width: 90px;
         max-width: 120px;
@@ -1416,7 +1471,8 @@ footer a:hover {
     gap: 20px;
 }
 
-.github-link, .website-link {
+.github-link,
+.website-link {
     display: flex;
     align-items: center;
     gap: 8px;
@@ -1429,12 +1485,14 @@ footer a:hover {
     background: rgba(79, 70, 229, 0.1);
 }
 
-.github-link:hover, .website-link:hover {
+.github-link:hover,
+.website-link:hover {
     color: #6366f1;
     background: rgba(79, 70, 229, 0.15);
 }
 
-.github-icon, .website-icon {
+.github-icon,
+.website-icon {
     font-size: 1.2em;
 }
 
@@ -1488,7 +1546,7 @@ footer a:hover {
         padding: 10px;
         max-width: 100%;
     }
-    
+
     .github-card {
         margin: 0;
     }

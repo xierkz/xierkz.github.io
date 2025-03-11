@@ -7,10 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             event.preventDefault();
             const page = this.getAttribute('data-page');
             loadPage(page);
-
-            // 移除所有链接的 active 类
             links.forEach(link => link.classList.remove('active'));
-            // 为当前点击的链接添加 active 类
             this.classList.add('active');
         });
     }
@@ -27,10 +24,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
     }
 
-    // 默认加载第一个页面
     if (links.length > 0) {
         loadPage(links[0].getAttribute('data-page'));
-        links[0].classList.add('active'); // 默认选中第一个链接
+        links[0].classList.add('active'); 
     }
 });
 
