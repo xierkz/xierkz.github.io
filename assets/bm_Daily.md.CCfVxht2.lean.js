@@ -1,1 +1,0 @@
-import{_ as e,c as t,o as r,ag as l}from"./chunks/framework.Ds6Eueu6.js";const m=JSON.parse('{"title":"日常","description":"","frontmatter":{},"headers":[],"relativePath":"bm/Daily.md","filePath":"bm/Daily.md"}'),o={name:"bm/Daily.md"};function i(n,a,s,_,c,h){return r(),t("div",null,a[0]||(a[0]=[l("",3)]))}const f=e(o,[["render",i]]);export{m as __pageData,f as default};
