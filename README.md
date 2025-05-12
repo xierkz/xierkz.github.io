@@ -43,3 +43,10 @@
 + 增加在追动漫+1
 + 完善追责语句，毕竟都是来网络的信息，肯定会被别人看到
 + …
+
+## 2025-05-12
++ 更新所有资源根域名为xierkz.asia
++ vitepress项目：https://github.xierkz.asia/
++ alist项目：https://alist.xierkz.asia/
++ libretv项目：https://libretv.xierkz.asia/  (含开机密码)
++ …
