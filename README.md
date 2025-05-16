@@ -50,3 +50,9 @@
 + alist项目：https://alist.xierkz.asia/
 + libretv项目：https://libretv.xierkz.asia/  (含开机密码)
 + …
+
+
+## 2025-05-16
++ 更新显卡设置图
++ 简化废话，杜绝展示废话！
++ …

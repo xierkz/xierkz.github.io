@@ -1,0 +1,1 @@
+import{_ as e,c as l,o as t,ag as i}from"./chunks/framework.KLbWPeN7.js";const _=JSON.parse('{"title":"漫画","description":"","frontmatter":{},"headers":[],"relativePath":"weeks/manga.md","filePath":"weeks/manga.md"}'),r={name:"weeks/manga.md"};function n(o,a,h,s,c,m){return t(),l("div",null,a[0]||(a[0]=[i("",9)]))}const u=e(r,[["render",n]]);export{_ as __pageData,u as default};
