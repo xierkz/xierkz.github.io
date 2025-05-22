@@ -1,1 +1,0 @@
-import{_ as a,c as r,o as t,ag as l}from"./chunks/framework.KLbWPeN7.js";const f=JSON.parse('{"title":"日常","description":"","frontmatter":{},"headers":[],"relativePath":"bm/Daily.md","filePath":"bm/Daily.md"}'),o={name:"bm/Daily.md"};function i(n,e,s,_,c,h){return t(),r("div",null,e[0]||(e[0]=[l("",3)]))}const d=a(o,[["render",i]]);export{f as __pageData,d as default};

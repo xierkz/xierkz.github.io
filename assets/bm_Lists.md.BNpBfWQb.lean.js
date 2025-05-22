@@ -1,0 +1,1 @@
+import{_ as e,c as a,o as l,ag as n}from"./chunks/framework.KLbWPeN7.js";const x=JSON.parse('{"title":"列表","description":"","frontmatter":{},"headers":[],"relativePath":"bm/Lists.md","filePath":"bm/Lists.md"}'),r={name:"bm/Lists.md"};function d(i,t,h,s,c,g){return l(),a("div",null,t[0]||(t[0]=[n("",23)]))}const y=e(r,[["render",d]]);export{x as __pageData,y as default};
