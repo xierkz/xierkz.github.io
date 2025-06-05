@@ -1,0 +1,1 @@
+import{_ as r,c as a,o as t,ag as l}from"./chunks/framework.C78-raJP.js";const m=JSON.parse('{"title":"日常","description":"","frontmatter":{},"headers":[],"relativePath":"bm/Daily.md","filePath":"bm/Daily.md"}'),o={name:"bm/Daily.md"};function n(i,e,h,f,s,_){return t(),a("div",null,e[0]||(e[0]=[l("",3)]))}const p=r(o,[["render",n]]);export{m as __pageData,p as default};
