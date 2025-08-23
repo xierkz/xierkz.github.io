@@ -1,1 +1,0 @@
-import{_ as e,c as l,o as i,ag as t}from"./chunks/framework.ko2zIC2c.js";const p=JSON.parse('{"title":"介绍","description":"","frontmatter":{},"headers":[],"relativePath":"weeks/index.md","filePath":"weeks/index.md"}'),r={name:"weeks/index.md"};function n(d,a,h,o,s,c){return i(),l("div",null,a[0]||(a[0]=[t("",8)]))}const u=e(r,[["render",n]]);export{p as __pageData,u as default};

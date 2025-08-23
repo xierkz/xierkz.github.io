@@ -1,1 +1,0 @@
-import{_ as r,c as a,o as t,ag as o}from"./chunks/framework.ko2zIC2c.js";const m=JSON.parse('{"title":"Others","description":"","frontmatter":{},"headers":[],"relativePath":"bm/Others.md","filePath":"bm/Others.md"}'),s={name:"bm/Others.md"};function l(n,e,i,h,c,d){return t(),a("div",null,e[0]||(e[0]=[o("",3)]))}const f=r(s,[["render",l]]);export{m as __pageData,f as default};

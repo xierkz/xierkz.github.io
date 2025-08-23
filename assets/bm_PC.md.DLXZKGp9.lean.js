@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as i,ag as l}from"./chunks/framework.ULYuKVMB.js";const u=JSON.parse('{"title":"电脑相关页","description":"","frontmatter":{},"headers":[],"relativePath":"bm/PC.md","filePath":"bm/PC.md"}'),t={name:"bm/PC.md"};function o(n,a,s,h,d,c){return i(),r("div",null,[...a[0]||(a[0]=[l("",14)])])}const m=e(t,[["render",o]]);export{u as __pageData,m as default};
