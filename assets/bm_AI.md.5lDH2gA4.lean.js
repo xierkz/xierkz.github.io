@@ -1,0 +1,1 @@
+import{_ as e,c as r,o as l,ag as i}from"./chunks/framework.C4nOkCZI.js";const m=JSON.parse('{"title":"AI区域","description":"","frontmatter":{},"headers":[],"relativePath":"bm/AI.md","filePath":"bm/AI.md"}'),t={name:"bm/AI.md"};function o(h,a,n,s,d,u){return l(),r("div",null,[...a[0]||(a[0]=[i("",13)])])}const f=e(t,[["render",o]]);export{m as __pageData,f as default};

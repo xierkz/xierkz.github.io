@@ -1,0 +1,1 @@
+import{_ as e,c as l,o as a,ag as t}from"./chunks/framework.C4nOkCZI.js";const c=JSON.parse('{"title":"日常","description":"","frontmatter":{},"headers":[],"relativePath":"bm/Games.md","filePath":"bm/Games.md"}'),i={name:"bm/Games.md"};function o(n,r,h,s,f,p){return a(),l("div",null,[...r[0]||(r[0]=[t("",5)])])}const _=e(i,[["render",o]]);export{c as __pageData,_ as default};
