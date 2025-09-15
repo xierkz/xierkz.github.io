@@ -13,7 +13,6 @@
 
 * 更新所有资源根域名为xierkz.asia
 * vitepress项目：https://github.xierkz.asia/
-* alist项目：https://alist.xierkz.asia/
 * libretv项目：https://libretv.xierkz.asia/  (含开机密码)
 * …
 
@@ -22,8 +21,6 @@
 * 更新显卡设置图
 * 简化废话，杜绝展示废话！
 * …
-
-## …
 
 ## 2025-08-07
 
@@ -38,7 +35,8 @@
 * 简化一些资源，以防占用资源
 * …
 
-# 2025-09-07
+# 2025-09-15
 
-* 简易更新
+* 更新动漫内容排版
+* 更新一些细节问题
 * …
