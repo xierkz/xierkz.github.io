@@ -1,0 +1,1 @@
+import{_ as r,c as a,o as l,ag as t}from"./chunks/framework.BSxiluPM.js";const u=JSON.parse('{"title":"Software","description":"","frontmatter":{},"headers":[],"relativePath":"bm/Soft.md","filePath":"bm/Soft.md"}'),i={name:"bm/Soft.md"};function o(n,e,h,s,f,c){return l(),a("div",null,[...e[0]||(e[0]=[t("",17)])])}const b=r(i,[["render",o]]);export{u as __pageData,b as default};

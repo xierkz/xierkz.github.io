@@ -1,1 +1,0 @@
-import{_ as a,c as r,o as t,ag as o}from"./chunks/framework.C4nOkCZI.js";const m=JSON.parse('{"title":"电脑环境","description":"","frontmatter":{},"headers":[],"relativePath":"bm/EVN.md","filePath":"bm/EVN.md"}'),l={name:"bm/EVN.md"};function i(n,e,s,d,c,h){return t(),r("div",null,[...e[0]||(e[0]=[o("",10)])])}const w=a(l,[["render",i]]);export{m as __pageData,w as default};
