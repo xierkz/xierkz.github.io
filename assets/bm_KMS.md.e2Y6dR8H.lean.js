@@ -1,1 +1,0 @@
-import{_ as s,c as d,o as i,ag as a}from"./chunks/framework.BSxiluPM.js";const W=JSON.parse('{"title":"KMS激活说明","description":"","frontmatter":{},"headers":[],"relativePath":"bm/KMS.md","filePath":"bm/KMS.md"}'),e={name:"bm/KMS.md"};function r(n,t,l,h,o,p){return i(),d("div",null,[...t[0]||(t[0]=[a("",65)])])}const w=s(e,[["render",r]]);export{W as __pageData,w as default};

@@ -1,1 +1,0 @@
-import{_ as e,c as r,o as t,ag as l}from"./chunks/framework.BSxiluPM.js";const c=JSON.parse('{"title":"电脑相关页","description":"","frontmatter":{},"headers":[],"relativePath":"bm/PC.md","filePath":"bm/PC.md"}'),i={name:"bm/PC.md"};function n(o,a,s,h,u,d){return t(),r("div",null,[...a[0]||(a[0]=[l("",14)])])}const b=e(i,[["render",n]]);export{c as __pageData,b as default};

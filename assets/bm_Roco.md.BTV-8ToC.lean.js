@@ -1,1 +1,0 @@
-import{_ as e,c as l,o as a,ag as t}from"./chunks/framework.BSxiluPM.js";const _=JSON.parse('{"title":"日常","description":"","frontmatter":{},"headers":[],"relativePath":"bm/Roco.md","filePath":"bm/Roco.md"}'),o={name:"bm/Roco.md"};function i(n,r,h,f,s,p){return a(),l("div",null,[...r[0]||(r[0]=[t("",5)])])}const m=e(o,[["render",i]]);export{_ as __pageData,m as default};
